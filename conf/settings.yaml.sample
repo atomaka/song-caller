@@ -1,0 +1,9 @@
+twilio:
+  sid: TWILIOKEY
+  token: SECRETTOKEN
+
+application:
+  mp3: http://www.domain.com/song-caller/file.xml
+  to: 15555555555
+  from: 15555555555
+  time: 1800

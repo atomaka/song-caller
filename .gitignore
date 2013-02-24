@@ -1,0 +1,5 @@
+vendor/*
+composer.lock
+conf/*.yaml
+files/*.mp3
+files/*.xml
