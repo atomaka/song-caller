@@ -4,3 +4,4 @@ twilio:
 
 application:
   from: 15555555555
+  generator: http://www.sample.com/xml-generator.php
