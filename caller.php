@@ -15,7 +15,7 @@ $client = new Services_Twilio(
   $settings['twilio']['token']
 );
 
-$result = $db->query('SELECT * FROM calls');
+$result = $db->query('SELECT id, schedule, phone FROM calls');
 
 foreach($result as $row) {
   $crontab->add_job(
@@ -25,7 +25,7 @@ foreach($result as $row) {
         $call = $client->account->calls->create(
           $settings['application']['from'],
           $row['phone'],
-          $row['xml']
+          $settings['application']['generator'] . '?id=' . $row['id']
         );
       })
   );
