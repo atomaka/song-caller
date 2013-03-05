@@ -7,10 +7,11 @@ add cronjob to run master file
 
 dependencies
 
+composer
 php5-sqlite
 sqlite
 sqlite3
 
 sql
 
-create-table.php will create the table
+create-table.php will create the table; set permissions to 666?
