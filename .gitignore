@@ -1,6 +1,7 @@
 vendor/*
 composer.lock
-conf/*.yaml
+conf/*.yml
 files/*.mp3
 files/*.xml
 logs/*.log
+db/*.db
